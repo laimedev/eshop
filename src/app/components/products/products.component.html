@@ -1,0 +1,44 @@
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a (click)="filter('')">
+            <i style="font-size: 30px;" class="fas fa-list">&nbsp;</i>
+                <h6>Todos los productos</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('tecnologia')">
+            <i style="font-size: 30px;" class="fas fa-tv">&nbsp;</i>
+                <h6>Tecnologias</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('electro')">
+                <i style="font-size: 30px;" class="fas fa-cash-register">&nbsp;</i>
+                <h6>Electro</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('deportes')">
+                <i style="font-size: 30px;" class="fas fa-flag-checkered">&nbsp;</i>
+                <h6>Deportes</h6>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row containercard">
+        <ng-container  *ngFor="let item of filterCategory">
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="" (click)="openProduct(item)">
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
+                <p><strong>Precio:</strong> S/ {{item.price}}</p>
+                <button class="btn btn-success" (click)=addtocart(item)>Añadir al carrito</button>
+            </div>
+        </ng-container>
+
+    </div>
+</div>

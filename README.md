@@ -1,37 +1,27 @@
-#Prueba eShop
+# EshopPrueba
 
-- Mostrar todos los productos en una página agrupados por categoría.
-- Se debe mostrar la imagen, nombre y precio del producto junto a un botón que lo
-agregue a un carrito de compra.
-- Se deben guardar los productos seleccionado en el carrito de compra.
-- Se debe visualizar un botón donde se vea cuantos productos hay en el carrito.
-- Al hacer clic en el botón se debe mostrar un popup el listado de los productos del
-carrito con su precio y el total a pagar.
-- Al hacer clic en el producto me debe redireccionar a otra página donde se muestre el
-detalle del producto.
-- Se debe incluir el botón de agregar al carrito de compra.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
 
-## Recursos
+## Development server
 
-- Creación de 2 API
-		1.  Obtener listado de productos
-		 GET  https://eshop-prueba.herokuapp.com/productos 
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-		2.  Obtener  producto por Identificador
-		 POST  https://eshop-prueba.herokuapp.com/productos/show 
-		 
+## Code scaffolding
 
-- Bootstrap 
-		 https://ng-bootstrap.github.io/#/home
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+## Build
 
-**Ejecutar el localhost**
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-		 npm install - [para descargar las dependencias del proyecto]
-		 ng serve -o --port 4203 - [ejecutar en el server local asignandole un puerto]
+## Running unit tests
 
-**Vista Previa (abrir)**
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-		 https://eshop.laimedev.com
+## Running end-to-end tests
 
-### Gracias!!
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
